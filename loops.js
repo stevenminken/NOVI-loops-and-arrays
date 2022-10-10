@@ -5,7 +5,9 @@
 // Hoera!
 // Hoera!
 // ==========================================
-
+for (let i = 0; i < 3; i++) {
+    console.log("Hoera!");
+}
 
 
 // ==========================================
@@ -17,7 +19,13 @@
 // loop...
 // klaar!
  // ==========================================
-
+for (let i = 0; i < 5; i++) {
+    if (i < 4) {
+        console.log("loop...");
+    } else {
+        console.log("klaar!");
+    }
+}
 
 
 // ==========================================
@@ -29,7 +37,15 @@
 // 3 is oneven
 // .... etc.
 // 15 is oneven
-
+for (let i = 0; i < 16; i++) {
+    let s;
+    if (i % 2 === 0) {
+        s = "even";
+    } else {
+        s = "oneven";
+    }
+    console.log(i + " is " + s);
+}
 // Tip: een getal is oneven als je het door 2 deelt en er blijft nog iets over. Een getal is even als je het deelt door 2 en er blijft niets over. Google daarom eens naar 'mdn webdocs remainder operator'.
 // ==========================================
 
@@ -50,4 +66,13 @@
 // >> 8
 // >> 9
 // ==========================================
+for (let i = 0; i < 10; i++) {
+    if (i > 2) {
+        process.stdout.write(">");
+    }
+    if (i > 5) {
+        process.stdout.write(">");
+    }
+    console.log(i)
+}
 
